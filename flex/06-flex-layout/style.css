@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -23,4 +29,67 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* My Code */
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header, .footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px;
+}
+
+.footer {
+  background-color: rgb(206, 206, 206);
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.left-links {
+  margin-right: auto;
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+input[type='text'] {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
 }
